@@ -17,6 +17,12 @@
     transition: all ease-in-out 0.5s;
 }
 
+.noStyle a:hover, .noStyle a:link, .noStyle a:visited, .noStyle a:focus{
+    transition: none ! important;
+    border-bottom: none ! important;
+    font-weight: normal ! important;
+}
+
 .notifyNavigation a {
     font-size:20px;
     border-bottom: 1px solid transparent;
