@@ -1,11 +1,7 @@
-@keyframes hoverNavigation {
-    from {text-decoration: none;}
-    to {text-decoration: underline;}
-}
-
 .notifyNavigation {
     padding: 0px;
     margin: 0px;
+    width: auto;
 }
 
 .notifyNavigation ul {
@@ -18,12 +14,17 @@
     padding: 16px 32px; 
     background: #0F8CA1;
     color: #FFF;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out 0.5s;
 }
 
+.notifyNavigation a {
+    font-size:20px;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out 0.5s;
+}
 
-
-.notifyNavigation li:hover
+.notifyNavigation a:hover
 {
-    animation-name: hoverNavigation;
-    animation-duration: 4s;
+    border-color:#FFF;
 } 
