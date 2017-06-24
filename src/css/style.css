@@ -13,7 +13,6 @@
     float: left;
     padding: 16px 32px; 
     background: #0F8CA1;
-    color: #FFF;
     border-bottom: 1px solid transparent;
     transition: all ease-in-out 0.5s;
 }
@@ -24,7 +23,18 @@
     transition: all ease-in-out 0.5s;
 }
 
+.notifyNavigation a:link, a:visited
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
 .notifyNavigation a:hover
 {
     border-color:#FFF;
+} 
+.notifyNavigation a:focus
+{
+    font-weight: bold;
+    border-bottom: 2px solid #FFF;
 } 
