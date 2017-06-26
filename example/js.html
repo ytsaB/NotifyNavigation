@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="..\src\css\style.css">
+    <script src="..\src\js\notifyNavigation.js"></script>
+    <script>
+        function initNotifyNavogation() {
+            var parentContainer = document.getElementById("container");
+            var notNav = new notifyNavigation(parentContainer);
+
+            var one = new navigationItem('One', '#');
+            notNav.addNavigationItem(one);
+
+            var two = new navigationItem('Two', '#');
+            notNav.addNavigationItem(two);
+
+        }
+    </script>
+<head>
+<meta charset="UTF-8">
+<title>DemoPage</title>
+</head>
+<body onload="initNotifyNavogation()">
+    <div id="container">
+    </div>
+</body>
+</html> 
